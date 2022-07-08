@@ -6,12 +6,14 @@ body {
 
 h1 {
     margin-left: 20px;
+    color: #000;
 }
 
 aside {
     font-style: italic;
     color: darkgoldenrod;
     margin-left: 40px;
+    width: 80%;
 }
 
 section {
@@ -30,4 +32,42 @@ footer {
 
 .weblink {
     color: cornflowerblue;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        color: red;
+        width: 80%;
+    }
+    .section1 {
+        font-size: large;
+    }
+    .section2 {
+        font-size: large;
+    }
+    aside {
+        font-size: large;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 15em 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    h1 {
+        color: blue;
+        grid-column: span 2;
+    }
+    .section1 {
+        font-size: larger;
+    }
+    .section2 {
+        font-size: larger;
+    }
+    aside {
+        font-size: larger;
+    }
 }
